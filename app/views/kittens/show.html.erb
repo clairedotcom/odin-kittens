@@ -4,5 +4,6 @@
 <%= @kitten.softness %><br>
 
 
-<%= link_to "Edit Kitten", edit_kitten_path(@kitten) %>
+<%= link_to "Edit Kitten", edit_kitten_path(@kitten) %><br>
+<%= link_to "Delete Kitten", kitten_path(@kitten), method: :delete, data: { confirm: "Are you sure?" } %><br>
 <%= link_to "Back", root_path %>
